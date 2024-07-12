@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* targets those containing a hyperlink */
 a:link {
-	color: var (--text-color);
+	color: var(--text-color);
 	text-decoration: none;
 }
 
@@ -279,7 +279,7 @@ a:hover {
 
 /* target the active state for the link */
 a:active {
-	background-color: var (--color-light-grey);
+	background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -287,15 +287,15 @@ a:active {
 }
 
 .card-category .section-tagline {
-	color: var (--color-primary);
+	color: var(--color-primary);
 }
 
 .section-tagline {
-	color: var (--color-primary);
-	font-family: var (--font-family-title);
-	text-transform: var (--section-tagline-transform);
-	font-weight: var (--font-weight-bold);
-	margin: var (--section-tagline-margin);
+	color: var(--color-primary);
+	font-family: var(--font-family-title);
+	text-transform: var(--section-tagline-transform);
+	font-weight: var(--font-weight-bold);
+	margin: var(--section-tagline-margin);
 }
 
 .container {
@@ -305,33 +305,33 @@ a:active {
 }
 
 .section {
-	padding: var (--section-padding);
+	padding: var(--section-padding);
 }
 
 .section-header {
-	text-align: var (--section-header-align);
-	padding: var (--section-header-padding);
+	text-align: var(--section-header-align);
+	padding: var(--section-header-padding);
 }
 
 .section-body {
-	padding: var (--section-body-padding);
+	padding: var(--section-body-padding);
 }
 
 .section-footer {
-	padding: var (--section-footer-padding);
-	text-align: var (--section-footer-align);
+	padding: var(--section-footer-padding);
+	text-align: var(--section-footer-align);
 }
 
 footer {
-	padding: var (--footer-padding);
+	padding: var(--footer-padding);
 }
 
 .section-title {
-	font-family: var (--font-family-title);
-	font-size: var (--font-size-xx-large);
-	font-weight: var (--font-weight-bold);
-	margin: var (--section-title-margin);
-	color: var (--section-title-color);
+	font-family: var(--font-family-title);
+	font-size: var(--font-size-xx-large);
+	font-weight: var(--font-weight-bold);
+	margin: var(--section-title-margin);
+	color: var(--section-title-color);
 }
 
 ul.row {
@@ -340,23 +340,22 @@ ul.row {
 	list-style: none;
 }
 
-[class^="col-"] {
+.col-1-3 {
+	width: 33.33%;
 	float: left;
 	padding: 0.5rem;
 }
 
-.col-1-3 {
-	width: 33.33%;
-}
-
 .col-1-2 {
 	width: 50%;
+	float: left;
+	padding: 0.5rem;
 }
 
 .footer-copyright {
 	margin: 0;
-	font-size: var (--font-size-small);
-	color: var (--text-color);
+	font-size: var(--font-size-small);
+	color: var(--text-color);
 }
 
 footer ul {
@@ -375,12 +374,12 @@ footer ul {
 }
 
 .nav .nav-item {
-	font-family: var (--nav-item-font-family);
-	font-weight: var (--nav-item-font-weight);
-	font-size: var (--nav-item-font-size);
-	letter-spacing: var (--nav-item-letter-spacing);
-	display: var (--nav-item-display);
-	margin: var (--nav-item-margin);
+	font-family: var(--nav-item-font-family);
+	font-weight: var(--nav-item-font-weight);
+	font-size: var(--nav-item-font-size);
+	letter-spacing: var(--nav-item-letter-spacing);
+	display: var(--nav-item-display);
+	margin: var(--nav-item-margin);
 }
 
 .nav .nav-link {
@@ -389,5 +388,11 @@ footer ul {
 }
 
 .nav .nav-link:hover {
-	color: var (--nav-item-link-hover);
+	color: var(--nav-item-link-hover);
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
 }
