@@ -253,7 +253,9 @@ a:link {
 	color: var(--text-color);
 	text-decoration: none;
 }
-
+a {
+	background-color: transparent;
+}
 /* target the visited state for the link */
 a:visited {
 	font-style: italic;
