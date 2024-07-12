@@ -238,9 +238,9 @@ html {
 	--nav-item-font-family: var(--font-family-title);
 	--nav-item-font-weight: var(--font-weight-bold);
 	--nav-item-font-size: var(--font-size-medium);
-	--nav-item-letter-spacing: 0.4rem;
+	--nav-item-letter-spacing: 0.04rem; /* Modification de 0.4rem à 0.04rem */
 	--nav-item-display: inline-block;
-	--nav-item-margin: 3rem 0 0 0;
+	--nav-item-margin: 0 0 3rem 0;
 	--nav-item-link-hover: var(--color-primary);
 }
 
@@ -282,7 +282,7 @@ a:active {
 	display: none;
 }
 
-.card-category {
+.card-category .section-tagline { /* ajout de cette classe */
 	color: var(--color-primary);
 }
 
@@ -352,7 +352,7 @@ footer {
 
 .nav .nav-link {
 	display: block;
-	padding: calc(var(--font-size-medium) / 2) var(--font-size-medium);
+	padding: 0.5rem 1rem; /* Modification pour remplacer calc(var(--font-size-medium) / 2) var(--font-size-medium) */
 }
 
 .nav .nav-link:hover {
