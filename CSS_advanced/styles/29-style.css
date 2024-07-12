@@ -419,6 +419,7 @@ footer ul {
 .nav .nav-link {
 	display: block;
 	padding: 0.5rem 1rem;
+	position: relative; /* ajouté */
 }
 
 .nav .nav-link::before {
