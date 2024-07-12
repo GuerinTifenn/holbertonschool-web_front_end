@@ -180,16 +180,15 @@ template {
 
 /*# sourceMappingURL=normalize.min.css.map */
 
-/* Universal box-sizing rule */
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
-}
-
-html {
-	scroll-behavior: smooth;
-	font-size: 62.5%;
 }
 
 :root {
@@ -301,6 +300,21 @@ a:active {
 	background-color: var(--color-light-grey);
 }
 
+.button {
+	display: var(--button-display);
+	padding: var(--button-padding);
+	border: var(--button-border);
+	font-size: var(--button-font-size);
+	color: var(--button-color);
+	text-decoration: var(--button-text-decoration);
+}
+
+.button:hover {
+	color: var(--button-hover-color);
+	text-decoration: var(--button-hover-text-decoration);
+	background: var(--button-hover-background);
+}
+
 .visually-hidden {
 	display: none;
 }
@@ -407,8 +421,23 @@ footer ul {
 	padding: 0.5rem 1rem;
 }
 
+.nav .nav-link::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--color-white);
+	width: 0;
+	height: 0.2rem;
+}
+
 .nav .nav-link:hover {
 	color: var(--nav-item-link-hover);
+}
+
+.nav .nav-item:hover .nav-link::before {
+	background-color: var(--color-primary);
+	width: 100%;
 }
 
 .row::after {
@@ -445,7 +474,7 @@ footer ul {
 
 .card-services a {
 	display: block;
-	padding: calc(var(--font-size-medium) * 2);
+	padding: 2rem;
 	background-color: var(--color-light-grey);
 }
 
@@ -453,22 +482,6 @@ footer ul {
 	color: var(--color-white);
 	background-color: var(--color-primary);
 	text-decoration: none;
-}
-
-/* button styles */
-.button {
-	display: var(--button-display);
-	padding: var(--button-padding);
-	border: var(--button-border);
-	font-size: var(--button-font-size);
-	color: var(--button-color);
-	text-decoration: var(--button-text-decoration);
-}
-
-.button:hover {
-	color: var(--button-hover-color);
-	text-decoration: var(--button-hover-text-decoration);
-	background: var(--button-hover-background);
 }
 
 /* card-testimonial styles */
