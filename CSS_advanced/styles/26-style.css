@@ -305,7 +305,7 @@ a:active {
 	color: var(--color-primary);
 	font-family: var(--font-family-title);
 	text-transform: var(--section-tagline-transform);
-	font-weight: var (--font-weight-bold);
+	font-weight: var(--font-weight-bold);
 	margin: var(--section-tagline-margin);
 }
 
@@ -342,7 +342,7 @@ footer {
 	font-size: var(--font-size-xx-large);
 	font-weight: var(--font-weight-bold);
 	margin: var(--section-title-margin);
-	color: var(--section-title-color);
+	color: var (--section-title-color);
 }
 
 ul.row {
@@ -419,7 +419,7 @@ footer ul {
 
 /* footer-address class */
 .footer-address {
-	color: var(--text-color);
+	color: var (--text-color);
 }
 
 /* social-link class */
@@ -461,4 +461,21 @@ footer ul {
 	color: var(--button-hover-color);
 	text-decoration: var(--button-hover-text-decoration);
 	background: var(--button-hover-background);
+}
+
+/* card-testimonial styles */
+.card-testimonial {
+	text-align: center;
+}
+
+.card-testimonial .card-avatar {
+	border-radius: 50%;
+	width: 10rem;
+	height: 10rem;
+}
+
+.card-testimonial .card-quote cite {
+	display: block;
+	padding-top: 1rem;
+	color: var(--color-primary);
 }
