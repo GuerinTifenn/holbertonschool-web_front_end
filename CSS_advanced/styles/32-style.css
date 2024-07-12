@@ -82,6 +82,10 @@ html {
 	--header-logo-link-position: absolute;
 	--header-logo-link-top: -1rem;
 	--header-logo-link-left: 0;
+
+	/* transitions */
+	--transition-duration: .3s;
+	--transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
 body {
@@ -131,6 +135,8 @@ a:active {
 	color: var(--button-hover-color);
 	text-decoration: var(--button-hover-text-decoration);
 	background: var(--button-hover-background);
+	transition-duration: var(--transition-duration);
+	transition-property: color, background-color;
 }
 
 .visually-hidden {
@@ -237,17 +243,18 @@ footer ul {
 .nav .nav-link {
 	display: block;
 	padding: 0.5rem 1rem;
-	position: relative; /* ajout */
+	position: relative;
 }
 
 .nav .nav-link::before {
-	content: ""; /* contenu vide */
-	position: absolute; /* positionnement absolu */
-	top: 0; /* position verticale */
-	left: 0; /* position horizontale */
-	background-color: var(--color-white); /* couleur de fond */
-	width: 0; /* largeur initiale */
-	height: 0.2rem; /* hauteur en rem */
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--color-white);
+	width: 0;
+	height: 0.2rem;
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-link:hover {
@@ -303,7 +310,6 @@ footer ul {
 	text-decoration: none;
 }
 
-/* card-testimonial styles */
 .card-testimonial {
 	text-align: center;
 }
@@ -352,6 +358,7 @@ footer ul {
 	left: -0.1rem;
 	right: -0.1rem;
 	z-index: 1;
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-inner {
@@ -383,6 +390,15 @@ footer ul {
 
 .card-work:hover .card-title {
 	opacity: 1;
+}
+
+.card-work:hover .card-image {
+	transform: scale(1.2);
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work:hover .card-outer {
+	transform: scale(0.95);
 }
 
 .section-hero {
