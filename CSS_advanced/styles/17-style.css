@@ -253,9 +253,7 @@ a:link {
 	color: var(--text-color);
 	text-decoration: none;
 }
-a {
-	background-color: transparent;
-}
+
 /* target the visited state for the link */
 a:visited {
 	font-style: italic;
@@ -279,28 +277,13 @@ a:active {
 	color: var(--color-primary);
 }
 
+.section {
+	padding: var(--section-padding);
+}
+
 .section-header {
 	text-align: var(--section-header-align);
 	padding: var(--section-header-padding);
-}
-
-.section-title {
-	font-family: var(--font-family-title);
-	font-size: var(--font-size-xx-large);
-	font-weight: var(--font-weight-bold);
-	margin: var(--section-title-margin);
-	color: var(--section-title-color);
-}
-
-.section-tagline {
-	color: var(--color-primary);
-	font-family: var(--font-family-title);
-	text-transform: var(--section-tagline-transform);
-	font-weight: var(--font-weight-bold);
-}
-
-.section {
-	padding: var(--section-padding);
 }
 
 .section-body {
@@ -312,12 +295,27 @@ a:active {
 	text-align: var(--section-footer-align);
 }
 
+footer {
+	padding: var(--footer-padding);
+}
+
+.section-tagline {
+	color: var(--color-primary);
+	font-family: var(--font-family-title);
+	text-transform: var(--section-tagline-transform);
+	font-weight: var(--font-weight-bold);
+}
+
 .container {
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-footer {
-	padding: var(--footer-padding);
+.section-title {
+	font-family: var(--font-family-title);
+	font-size: var(--font-size-xx-large);
+	font-weight: var(--font-weight-bold);
+	margin: var(--section-title-margin);
+	color: var(--section-title-color);
 }
