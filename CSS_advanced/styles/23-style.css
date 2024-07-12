@@ -227,16 +227,15 @@ html {
 	--section-title-margin: 0;
 	--section-title-color: var(--color-black);
 
-	/* padding */
+	/* section padding */
 	--section-padding: 5rem 0;
 	--section-header-padding: 0 0 3rem;
 	--section-body-padding: 0 0 3rem;
 	--section-footer-padding: 3rem 0 0;
 	--section-footer-align: center;
 	--footer-padding: 5rem 0 1rem;
-	--section-tagline-margin: 0;
 
-	/* nav */
+	/* navbar */
 	--nav-item-font-family: var(--font-family-title);
 	--nav-item-font-weight: var(--font-weight-bold);
 	--nav-item-font-size: var(--font-size-medium);
@@ -244,6 +243,9 @@ html {
 	--nav-item-display: inline-block;
 	--nav-item-margin: 0 0 3rem 0;
 	--nav-item-link-hover: var(--color-primary);
+
+	/* section-tagline margin */
+	--section-tagline-margin: 0;
 }
 
 body {
@@ -329,7 +331,7 @@ footer {
 	font-size: var(--font-size-xx-large);
 	font-weight: var(--font-weight-bold);
 	margin: var(--section-title-margin);
-	color: var(--section-title-color);
+	color: var (--section-title-color);
 }
 
 ul.row {
@@ -357,7 +359,7 @@ ul.row {
 	color: var(--text-color);
 }
 
-.footer ul {
+footer ul {
 	text-align: right;
 }
 
